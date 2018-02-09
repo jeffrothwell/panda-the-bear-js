@@ -41,3 +41,17 @@
 1. Erase panda's personal details
  - personalDetails = document.querySelectorAll('.bio-info-item span:nth-child(2n)')
  - for(var i = 0; i < personalDetails.length; i++){personalDetails[i].style.display = 'none';};
+
+***Next Assignment***
+1. Take the time travel skill off the page
+ - skill = document.querySelector('#time-travel');
+ - skillDiv = skill.parentElement
+ - skillDiv.remove()
+2. Duplicate pikachu
+ - for(var i = 0; i < 10; i++){pikachu = document.querySelector('#right-image').cloneNode(true); document.querySelector('.portfolio-container').appendChild(pikachu);}
+3. add page updated at to info
+ - infoItem = document.querySelector('.bio-info-item').cloneNode(true);
+ - infoItem.firstElementChild.innerText = 'Page last updated at';
+ - today = new Date();
+ - infoItem.lastElementChild.innerText = today
+ - document.querySelector('.bio-info').appendChild(infoItem);
