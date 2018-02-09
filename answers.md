@@ -28,3 +28,16 @@
 1. Change the placeholder attribute of the message field to "state your business"
   - messageField = document.querySelector('#message');
   - messageField.form[2].placeholder = 'State Your Business';
+1. Give the name field a "value" attribute of "your nemesis".
+  - nameField.value = 'Your Nemesis';
+1. Change the value attribute of the email field to "koalathebear@gmail.com".
+  - emailField = document.querySelector('#email');
+  - emailField.value = 'kalathebear@gmail.com';
+1. Change the value of the submit button on the contact form to "En garde!".
+  - submitButton = document.querySelector('#submit');
+  - submitButton.value = 'En garde!';
+1. Disable submit button
+  - submitButton.disabled = true;
+1. Erase panda's personal details
+ - personalDetails = document.querySelectorAll('.bio-info-item span:nth-child(2n)')
+ - for(var i = 0; i < personalDetails.length; i++){personalDetails[i].style.display = 'none';};
